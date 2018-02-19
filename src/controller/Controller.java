@@ -49,11 +49,52 @@ public class Controller {
         }
     }
     
-    private void addNew() {}
-    private void Edit() {}
-    private void Delete() {}
-    private void Search() {}
-    private void SeeAll() {}
-    private void SeeByAuthor() {}
+    private void addNew() {
+    
+        AskForISBN();
+        AskForAuthor();
+        AskForTitle();
+        AskForPublisher();
+        AskForPublicationYear();
+        AskForPrice();
+        AskForType();
+        AddNewBook();
+    
+    }
+    
+    private void Edit() {
+    
+        AskForISBN();
+        AskWhatToEdit();
+        Edit();
+    
+    }
+    
+    private void Delete() {
+    
+        AskForISBN();
+        Delete();
+    
+    }
+    
+    private void Search() {
+    
+        AskForISBN();
+        Search();
+    
+    }
+    
+    private void SeeAll() {
+    
+        DisplayALl();
+    
+    }
+    
+    private void SeeByAuthor() {
+    
+        AskFOrAuthor();
+        DisplayByAuthor();
+    
+    }
 
 }
