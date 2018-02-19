@@ -41,5 +41,17 @@ public class View {
         Scanner scanner = new Scanner(System.in);
         scanner.nextLine();
     }
+    
+    public int askForOption() {
+        int option = 0;
+        Scanner scanner = new Scanner(System.in);
+        try {
+            System.out.print("\nEnter option: ");
+            option = scanner.nextInt();
+        } catch (InputMismatchException e) {
+            System.out.println("You type wrong sign!");
+        }
+        return option;
+    }
 
 }
