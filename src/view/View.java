@@ -1,5 +1,8 @@
 package library;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class View {
 
     private Map<Integer, String> menu = new HashMap<>();
