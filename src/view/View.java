@@ -35,5 +35,11 @@ public class View {
         Scanner scanner = new Scanner(System.in);
         return scanner.nextLine();
     }
+    
+    public void displayPressAnyKeyToContinueMessage() {
+        System.out.print("\nPress any key to continue.");
+        Scanner scanner = new Scanner(System.in);
+        scanner.nextLine();
+    }
 
 }
