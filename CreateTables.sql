@@ -10,7 +10,9 @@ CREATE TABLE books (
 
 CREATE TABLE publishers (
   publisher_id INTEGER PRIMARY KEY,
-  name TEXT NOT NULL
+  name TEXT NOT NULL,
+  city TEXT NOT NULL,
+  country TEXT NOT NULL
   );
 
 CREATE TABLE type_book (
