@@ -16,27 +16,27 @@ public class Controller {
         boolean isAppRunning = true;
         while (isAppRunning) {
             view.handleMenu();
-            String userInput = view.getStringInput();
+            int userInput = view.askForOption();
             switch (userInput) {
-                case "1":
+                case 1:
                     addNew();
                     break;
-                case "2":
+                case 2:
                     Edit();
                     break;
-                case "3":
+                case 3:
                     Delete();
                     break;
-                case "4":
+                case 4:
                     Search();
                     break;
-                case "5":
+                case 5:
                     SeeAll();
                     break;
-                case "6":
+                case 6:
                     SeeByAuthor();
                     break;
-                case "0":
+                case 0:
                     isAppRunning = false;
                     break;
                 default:
