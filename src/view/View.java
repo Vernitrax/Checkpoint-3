@@ -15,5 +15,11 @@ public class View {
         menu.put(0, "Exit.");
     
     }
+    
+    private void displayMenu() {
+        for (Integer option : menu.keySet()) {
+            System.out.println(option + ". " + menu.get(option));
+        }
+    }
 
 }
