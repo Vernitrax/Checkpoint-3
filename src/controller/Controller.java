@@ -1,8 +1,5 @@
 package library;
 
-//import dao.DAO;
-//import view.View;
-
 public class Controller {
 
     private DAO dao;
