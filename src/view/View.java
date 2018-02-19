@@ -2,6 +2,7 @@ package library;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Scanner;
 
 public class View {
 
@@ -23,6 +24,16 @@ public class View {
         for (Integer option : menu.keySet()) {
             System.out.println(option + ". " + menu.get(option));
         }
+    }
+    
+    public void handleMenu() {
+        prepareMenu();
+        displayMenu();
+    }
+    
+    String getStringInput() {
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextLine();
     }
 
 }
