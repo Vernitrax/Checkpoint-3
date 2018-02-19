@@ -20,14 +20,14 @@ CREATE TABLE authors (
   );
 
 CREATE TABLE books (
-  ISBN INTEGER PRIMARY KEY,
+  ISBN INTEGER PRIMARY KEY NOT NULL,
   author INTEGER,
-  FOREIGN KEY (author) REFERENCES authors(author_id),
   title TEXT NOT NULL,
   publisher INTEGER,
-  FOREIGN KEY (publisher) REFERENCES publishers(publisher_id),
   publication_year INTEGER NOT NULL,
   price INTEGER NOT NULL,
   type INTEGER,
-  FOREIGN KEY (type) REFERENCES type_books(type_id)
+  FOREIGN KEY(author) REFERENCES authors(author_id),
+  FOREIGN KEY(publisher) REFERENCES publishers(publisher_id),
+  FOREIGN KEY(type) REFERENCES type_book(type_id)
   );
