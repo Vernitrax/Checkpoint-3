@@ -32,7 +32,7 @@ public class View {
         displayMenu();
     }
     
-    String getStringInput() {
+    public String getStringInput() {
         Scanner scanner = new Scanner(System.in);
         return scanner.nextLine();
     }
@@ -58,6 +58,16 @@ public class View {
     public void displayWrongInputMessage() {
         System.out.println("Wrong Input");
         displayPressAnyKeyToContinueMessage();
+    }
+
+    public int AskForISBN() {
+    
+        int isbn = askForOption();
+        int length = (int)(Math.log10(isbn)+1);
+        if(length == 13) return isbn;
+        else System.out.println("Wrong ISBN!");
+        return 0;
+    
     }
 
 }
