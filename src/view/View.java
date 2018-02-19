@@ -53,5 +53,10 @@ public class View {
         }
         return option;
     }
+    
+    public void displayWrongSignError() {
+        System.out.println("There is no such option!");
+        displayPressAnyKeyToContinueMessage();
+    }
 
 }
