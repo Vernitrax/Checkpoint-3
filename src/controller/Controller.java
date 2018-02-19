@@ -1,7 +1,7 @@
 package library;
 
-import dao.DAO;
-import view.View;
+//import dao.DAO;
+//import view.View;
 
 public class Controller {
 
@@ -17,9 +17,8 @@ public class Controller {
     
     public void start() {
         boolean isAppRunning = true;
-        view.handleMenu();
         while (isAppRunning) {
-            view.displayMenu();
+            view.handleMenu();
             String userInput = view.getStringInput();
             switch (userInput) {
                 case "1":
@@ -51,49 +50,49 @@ public class Controller {
     
     private void addNew() {
     
-        AskForISBN();
-        AskForAuthor();
-        AskForTitle();
-        AskForPublisher();
-        AskForPublicationYear();
-        AskForPrice();
-        AskForType();
-        AddNewBook();
+        //AskForISBN();
+        //AskForAuthor();
+        //AskForTitle();
+        //AskForPublisher();
+        //AskForPublicationYear();
+        //AskForPrice();
+        //AskForType();
+        //AddNewBook();
     
     }
     
     private void Edit() {
     
-        AskForISBN();
-        AskWhatToEdit();
-        Edit();
+        //AskForISBN();
+        //AskWhatToEdit();
+        //Edit();
     
     }
     
     private void Delete() {
     
-        AskForISBN();
-        Delete();
+        //AskForISBN();
+        //Delete();
     
     }
     
     private void Search() {
     
-        AskForISBN();
-        Search();
+        //AskForISBN();
+        //Search();
     
     }
     
     private void SeeAll() {
     
-        DisplayALl();
+        //DisplayALl();
     
     }
     
     private void SeeByAuthor() {
     
-        AskFOrAuthor();
-        DisplayByAuthor();
+        //AskFOrAuthor();
+        //DisplayByAuthor();
     
     }
 

@@ -3,6 +3,7 @@ package library;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.InputMismatchException;
 
 public class View {
 
@@ -54,8 +55,8 @@ public class View {
         return option;
     }
     
-    public void displayWrongSignError() {
-        System.out.println("There is no such option!");
+    public void displayWrongInputMessage() {
+        System.out.println("Wrong Input");
         displayPressAnyKeyToContinueMessage();
     }
 

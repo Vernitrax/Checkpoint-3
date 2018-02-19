@@ -1,10 +1,10 @@
 package library;
 
-import controller.Controller;
+//import controller.Controller;
 
 public class Application {
 
-    public Application() {
+    public static void main(String... args) {
     
         Controller controller = new Controller();
         controller.start();
